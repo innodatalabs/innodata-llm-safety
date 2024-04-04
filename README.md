@@ -12,7 +12,7 @@ Benchmarking Llama2, Mistral, Gemma and GPT for Factuality, Toxicity, Bias and P
 
 We ran the benchmark on a server with 1 x NVIDIA A100 80GB.
 
-Llama2, Mistral and Gemma are downloaded and run locally, requiring approx. 50Gb disk space.
+Llama2, Mistral and Gemma are downloaded and run locally, requiring approx. 90Gb disk space.
 
 ## Set up
 
@@ -22,6 +22,9 @@ python3.11 -m venv .venv
 pip install wheel pip -U
 pip install -r requirements.txt
 ```
+
+(Works on Python3.10 as well.)
+
 
 ## Required environment variables
 
@@ -64,4 +67,4 @@ Once completed, you can launch a local web app:
 redlite server
 ```
 
-We host the full result from our published benchmark [here](www.www.com).
+We host the full result from our published benchmark [here]().

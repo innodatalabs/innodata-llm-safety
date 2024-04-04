@@ -45,12 +45,12 @@ MANUAL_TASKS = [
 
 # Models under examination
 models = [
-    lambda: HFModel("meta-llama/Llama-2-7b-chat-hf", token=os.environ["HF_TOKEN"], max_length=4096, device_map='auto'),
-    lambda: HFModel("meta-llama/Llama-2-13b-chat-hf", token=os.environ["HF_TOKEN"], max_length=4096, device_map='auto'),
-    lambda: IgnoreSystemModel(HFModel("mistralai/Mistral-7B-Instruct-v0.1", token=os.environ["HF_TOKEN"], device_map='auto')),
-    lambda: IgnoreSystemModel(HFModel("mistralai/Mistral-7B-Instruct-v0.2", token=os.environ["HF_TOKEN"], device_map='auto')),
-    lambda: IgnoreSystemModel(HFModel("google/gemma-2b-it", token=os.environ["HF_TOKEN"], device_map='auto')),
-    lambda: IgnoreSystemModel(HFModel("google/gemma-7b-it", token=os.environ["HF_TOKEN"], device_map='auto')),   
+    lambda: HFModel("meta-llama/Llama-2-13b-chat-hf", token=os.environ["HF_TOKEN"], max_length=4096, device_map='cuda:0'),
+    lambda: HFModel("meta-llama/Llama-2-7b-chat-hf", token=os.environ["HF_TOKEN"], max_length=4096, device_map='cuda:0'),
+    lambda: IgnoreSystemModel(HFModel("mistralai/Mistral-7B-Instruct-v0.1", token=os.environ["HF_TOKEN"], device_map='cuda:0')),
+    lambda: IgnoreSystemModel(HFModel("mistralai/Mistral-7B-Instruct-v0.2", token=os.environ["HF_TOKEN"], device_map='cuda:0')),
+    lambda: IgnoreSystemModel(HFModel("google/gemma-2b-it", token=os.environ["HF_TOKEN"], device_map='cuda:0')),
+    lambda: IgnoreSystemModel(HFModel("google/gemma-7b-it", token=os.environ["HF_TOKEN"], device_map='cuda:0')),   
     lambda: OpenAIModel(model="gpt-3.5-turbo-1106", api_key=os.environ["OPENAI_API_KEY"]),
     lambda: OpenAIModel(model="gpt-4-0125-preview", api_key=os.environ["OPENAI_API_KEY"])
 ]
@@ -59,13 +59,15 @@ print("Saving benchmark results to folder {}".format(os.environ["REDLITE_DATA_DI
 
 # For all model, benchmark all tasks
 for model_constructor in models:
+    model=model_constructor()
     for task in SEMI_SYNTHETIC_TASKS+MANUAL_TASKS:
         run(
-            model=model_constructor(),
+            model=model,
             dataset=load_dataset(task['dataset']),
             metric=task['metric'],
             max_samples=MAX_SAMPLES
         )
+    del model
 
 # Run baseline experiments (fake LLM that always answers a canned completion)
 for task in SEMI_SYNTHETIC_TASKS+MANUAL_TASKS:
