@@ -2,7 +2,7 @@
 Benchmarking Llama2, Mistral, Gemma and GPT for Factuality, Toxicity, Bias and Propensity for Hallucinations
 
 
-|  [Paper]() | [Datasets](https://huggingface.co/innodatalabs)  |  [Red teaming tool](https://github.com/innodatalabs/redlite) | [Results]()  |  
+|  [Paper](https://arxiv.org/abs/2404.09785) | [Datasets](https://huggingface.co/innodatalabs)  |  [Red teaming tool](https://github.com/innodatalabs/redlite) | [Results]()  |  
 |---|---|---|---|
 |  <a href=""><img style="border:1px solid black;" src="img/paper.png" alt="drawing" width="320"/></a> | <a href="https://huggingface.co/innodatalabs"><img style="border:1px solid black;" src="img/datasets.png" alt="drawing" width="320"/></a>  | <a href="https://github.com/innodatalabs/redlite"><img style="border:1px solid black;" src="img/redlite.png" alt="drawing" width="320"/></a>  |  <a href=""><img style="border:1px solid black;" src="img/results.png" alt="drawing" width="320"/></a> |
 
@@ -26,9 +26,11 @@ pip install -r requirements.txt
 (Works on Python3.10 as well.)
 
 
-## Required environment variables
+## Required tokens and environment variables
 
 In order to download Huggingface datasets and models you need a [token](https://huggingface.co/settings/tokens).
+
+Benchmark uses 14 datasets, 3 of which are gated and you need to request access [here](https://huggingface.co/datasets/innodatalabs/rt-inod-finance), [here](https://huggingface.co/datasets/innodatalabs/rt-inod-bias) and [here](https://huggingface.co/datasets/innodatalabs/rt-inod-jailbreaking).
 
 Llama2 is gated model, you need to [request access](https://llama.meta.com/llama-downloads/).
 
