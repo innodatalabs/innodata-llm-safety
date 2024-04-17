@@ -2,9 +2,9 @@
 Benchmarking Llama2, Mistral, Gemma and GPT for Factuality, Toxicity, Bias and Propensity for Hallucinations
 
 
-|  [Paper](https://arxiv.org/abs/2404.09785) | [Datasets](https://huggingface.co/innodatalabs)  |  [Red teaming tool](https://github.com/innodatalabs/redlite) | [Results]()  |  
+|  [Paper](https://arxiv.org/abs/2404.09785) | [Datasets](https://huggingface.co/innodatalabs)  |  [Red teaming tool](https://github.com/innodatalabs/redlite) | [Results](https://llm-safety.innodata.com/)  |  
 |---|---|---|---|
-|  <a href=""><img style="border:1px solid black;" src="img/paper.png" alt="drawing" width="320"/></a> | <a href="https://huggingface.co/innodatalabs"><img style="border:1px solid black;" src="img/datasets.png" alt="drawing" width="320"/></a>  | <a href="https://github.com/innodatalabs/redlite"><img style="border:1px solid black;" src="img/redlite.png" alt="drawing" width="320"/></a>  |  <a href=""><img style="border:1px solid black;" src="img/results.png" alt="drawing" width="320"/></a> |
+|  <a href="https://arxiv.org/abs/2404.09785"><img style="border:1px solid black;" src="img/paper.png" alt="drawing" width="320"/></a> | <a href="https://huggingface.co/innodatalabs"><img style="border:1px solid black;" src="img/datasets.png" alt="drawing" width="320"/></a>  | <a href="https://github.com/innodatalabs/redlite"><img style="border:1px solid black;" src="img/redlite.png" alt="drawing" width="320"/></a>  |  <a href="https://llm-safety.innodata.com/"><img style="border:1px solid black;" src="img/results.png" alt="drawing" width="320"/></a> |
 
 # Reproducing our Research
 
@@ -63,10 +63,8 @@ It runs in ~24 hours on a GPU server.
 
 ## Visualize
 
-Once completed, you can launch a local web app:
+Once completed, you can launch a local web app to visualize the benchmark:
 
 ```bash
 redlite server
 ```
-
-We host the full result from our published benchmark [here]().
