@@ -1,10 +1,24 @@
 # innodata-llm-safety
-Benchmarking Llama2, Mistral, Gemma and GPT for Factuality, Toxicity, Bias and Propensity for Hallucinations
+Benchmarking Llama, Mistral, Gemma and GPT for Factuality, Toxicity, Bias and Propensity for Hallucinations
 
+<span style="color:red">UPDATE August 19th, 2024:</span>
 
-|  [Paper](https://arxiv.org/abs/2404.09785) | [Datasets](https://huggingface.co/innodatalabs)  |  [Red teaming tool](https://github.com/innodatalabs/redlite) | [Results](https://llm-safety.innodata.com/)  |  
-|---|---|---|---|
-|  <a href="https://arxiv.org/abs/2404.09785"><img style="border:1px solid black;" src="img/paper.png" alt="drawing" width="320"/></a> | <a href="https://huggingface.co/innodatalabs"><img style="border:1px solid black;" src="img/datasets.png" alt="drawing" width="320"/></a>  | <a href="https://github.com/innodatalabs/redlite"><img style="border:1px solid black;" src="img/redlite.png" alt="drawing" width="320"/></a>  |  <a href="https://llm-safety.innodata.com/"><img style="border:1px solid black;" src="img/results.png" alt="drawing" width="320"/></a> |
+<span style="color:red">
+
+- Benchmarking latest open source LLMs: Gemma-2, Llama3 & 3.1, Mistral v0.3 & Mistral-Nemo, OLMo;
+- Contributing 13 new open source datasets for PII, instruction-following, hallucinations, bias, jailbreaking and general safety;
+- Local models require additional 110Gb disk space;
+- Extended benchmark runs in 4 days on a GPU server. 
+
+</span>
+
+| [Extended Results (Aug. 19th 2024)](https://llm-safety.innodata.com/)  |  
+|---|
+|  <a href="https://llm-safety.innodata.com/"><img style="border:1px solid black;" src="img/results.png" alt="drawing" width="320"/></a> |
+
+|  [Paper](https://arxiv.org/abs/2404.09785) | [Datasets](https://huggingface.co/innodatalabs)  |  [Red teaming tool](https://github.com/innodatalabs/redlite) | 
+|---|---|---|
+|  <a href="https://arxiv.org/abs/2404.09785"><img style="border:1px solid black;" src="img/paper.png" alt="drawing" width="320"/></a> | <a href="https://huggingface.co/innodatalabs"><img style="border:1px solid black;" src="img/datasets.png" alt="drawing" width="320"/></a>  | <a href="https://github.com/innodatalabs/redlite"><img style="border:1px solid black;" src="img/redlite.png" alt="drawing" width="320"/></a>  |
 
 # Reproducing our Research
 
@@ -59,7 +73,7 @@ The following script does it all:
 python run_all.py
 ```
 
-It runs in ~24 hours on a GPU server. 
+Original benchmark runs in ~24 hours on a GPU server. 
 
 ## Visualize
 

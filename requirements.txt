@@ -1,5 +1,5 @@
-redlite[all]==0.0.56
-transformers==4.39.1
+redlite[all]==0.3.1
+transformers==4.44.0
 torch==2.2.2
 accelerate==0.28.0
 sentencepiece==0.2.0
