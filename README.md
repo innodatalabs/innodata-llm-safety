@@ -1,15 +1,15 @@
 # innodata-llm-safety
-Benchmarking Llama, Mistral, Gemma and GPT for Factuality, Toxicity, Bias and Propensity for Hallucinations
+Benchmarking Llama, Mistral, Gemma, DeepSeek and GPT for factuality, toxicity, bias, instruction following, avoiding jailbreaks and propensity for hallucinations
 
 > [!NOTE]
-> **UPDATED** August 19th, 2024:
+> **UPDATED** February 10th, 2025:
 >
-> - Benchmarking latest open source LLMs: Gemma-2, Llama3 & 3.1, Mistral v0.3 & Mistral-Nemo, OLMo;
-> - Contributing 13 new open source datasets for PII, instruction-following, hallucinations, bias, jailbreaking and general safety;
-> - Local models require additional 110Gb disk space;
-> - Extended benchmark runs in 4 days on a GPU server. 
+> - Benchmarking latest open source LLMs including *DeepSeek*, OLMo-2, etc.
+> - All datasets revised: 100s of ground truth corrections.
+> - Model tested are all 'small LLMs' (7B-12B parameters) except for GPT-4o added to the benchmark as 'upper limit'.
 
-| [Extended Results<br/>(Aug. 19th 2024)](https://llm-safety.innodata.com/) |  [Paper](https://arxiv.org/abs/2404.09785) | [Datasets](https://huggingface.co/innodatalabs)  |  [Red teaming tool](https://github.com/innodatalabs/redlite) | 
+
+| [Extended Results<br/>(Feb. 10th 2025)](https://llm-safety.innodata.com/) |  [Paper](https://arxiv.org/abs/2404.09785) | [Datasets](https://huggingface.co/innodatalabs)  |  [Red teaming tool](https://github.com/innodatalabs/redlite) | 
 |---|---|---|---|
 |  <a href="https://llm-safety.innodata.com/"><img style="border:1px solid black;" src="img/results.png" alt="drawing" width="300"/></a> |  <a href="https://arxiv.org/abs/2404.09785"><img style="border:1px solid black;" src="img/paper.png" alt="drawing" width="300"/></a> | <a href="https://huggingface.co/innodatalabs"><img style="border:1px solid black;" src="img/datasets.png" alt="drawing" width="300"/></a>  | <a href="https://github.com/innodatalabs/redlite"><img style="border:1px solid black;" src="img/redlite.png" alt="drawing" width="300"/></a>  |
 
