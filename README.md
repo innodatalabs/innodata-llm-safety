@@ -6,7 +6,6 @@ Benchmarking Llama, Mistral, Gemma, DeepSeek and GPT for factuality, toxicity, b
 |  <a href="https://llm-safety.innodata.com/"><img style="border:1px solid black;" src="img/results.png" alt="drawing" width="300"/></a> |  <a href="https://arxiv.org/abs/2404.09785"><img style="border:1px solid black;" src="img/paper.png" alt="drawing" width="300"/></a> | <a href="https://huggingface.co/innodatalabs"><img style="border:1px solid black;" src="img/datasets.png" alt="drawing" width="300"/></a>  | <a href="https://github.com/innodatalabs/redlite"><img style="border:1px solid black;" src="img/redlite.png" alt="drawing" width="300"/></a>  |
 
 > [!NOTE]
-
 > **UPDATED** August 18th, 2025:
 > - Comparing latest Qwen, DeepSeek, Llama, Phi, Gemma, Olmo, Mistral 
 > - Benchmarking OpenAI open source model: gpt-oss-20b 
