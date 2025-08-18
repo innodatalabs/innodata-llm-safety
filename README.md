@@ -1,11 +1,16 @@
 # innodata-llm-safety
 Benchmarking Llama, Mistral, Gemma, DeepSeek and GPT for factuality, toxicity, bias, instruction following, avoiding jailbreaks and propensity for hallucinations
 
-| [Public Safety Benchmark](https://llm-safety.innodata.com/) |  [Paper](https://arxiv.org/abs/2404.09785) | [Datasets](https://huggingface.co/innodatalabs)  |  [Red teaming tool](https://github.com/innodatalabs/redlite) | 
+| [LLM Safety Benchmark](https://llm-safety.innodata.com/) |  [Paper](https://arxiv.org/abs/2404.09785) | [39 Safety Datasets](https://huggingface.co/innodatalabs)  |  [Red teaming OSS Tool](https://github.com/innodatalabs/redlite) | 
 |---|---|---|---|
 |  <a href="https://llm-safety.innodata.com/"><img style="border:1px solid black;" src="img/results.png" alt="drawing" width="300"/></a> |  <a href="https://arxiv.org/abs/2404.09785"><img style="border:1px solid black;" src="img/paper.png" alt="drawing" width="300"/></a> | <a href="https://huggingface.co/innodatalabs"><img style="border:1px solid black;" src="img/datasets.png" alt="drawing" width="300"/></a>  | <a href="https://github.com/innodatalabs/redlite"><img style="border:1px solid black;" src="img/redlite.png" alt="drawing" width="300"/></a>  |
 
 > [!NOTE]
+
+> **UPDATED** August 18th, 2025:
+> - Comparing latest Qwen, DeepSeek, Llama, Phi, Gemma, Olmo, Mistral 
+> - Benchmarking OpenAI open source model: gpt-oss-20b 
+> - 3 new state-of-the-art safety datasets (rt3 series)
 
 > **UPDATED** March 12th, 2025:
 > - Added Qwen2.5-7B 
