@@ -6,6 +6,11 @@ Benchmarking Llama, Mistral, Gemma, DeepSeek and GPT for factuality, toxicity, b
 |  <a href="https://llm-safety.innodata.com/"><img style="border:1px solid black;" src="img/results.png" alt="drawing" width="300"/></a> |  <a href="https://arxiv.org/abs/2404.09785"><img style="border:1px solid black;" src="img/paper.png" alt="drawing" width="300"/></a> | <a href="https://huggingface.co/innodatalabs"><img style="border:1px solid black;" src="img/datasets.png" alt="drawing" width="300"/></a>  | <a href="https://github.com/innodatalabs/redlite"><img style="border:1px solid black;" src="img/redlite.png" alt="drawing" width="300"/></a>  |
 
 > [!NOTE]
+> **UPDATED** January 7th, 2026:
+> - Comparing latest major models Gemini 3 pro, Claude Opus 4.5, GPT 5.1, Deepseek 3.1 
+> - Comparing latest small models Qwen, Hunyuan, Llama, Phi, Gemma, Olmo, Mistral, gpt-oss 
+> - 4 new state-of-the-art datasets for stem, code and function calling (rt4 series)
+
 > **UPDATED** August 18th, 2025:
 > - Comparing latest Qwen, DeepSeek, Llama, Phi, Gemma, Olmo, Mistral 
 > - Benchmarking OpenAI open source model: gpt-oss-20b 
